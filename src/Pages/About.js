@@ -1,17 +1,17 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 
-class About extends React.Component {
+const About = () => {
     
-    render() {
         return (
             <div className="content-block">
+                <Link to="/" className="back button">{`< home `}</Link>
                 <h2>About</h2>
                 <p>I make websites.</p>
                 <p>Currently, I'm really interested in shaders.</p>
             </div>
         )
     }
-}
 
 
 

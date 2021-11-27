@@ -13,7 +13,10 @@ const Projects = () => {
     ];
     return (
         <>
-            <Link to="/" className="back button">{`< home `}</Link>
+            <div style={{ display: 'flex', flexDirection: 'column', marginRight: '20px'}}>
+                <Link to="/" className="back button">{`< home `}</Link>
+                <h2>Projects</h2>
+            </div>
             <div className="project-container">
             { PROJECTS.map( project => {
                 return <Project
