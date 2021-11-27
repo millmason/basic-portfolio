@@ -1,0 +1,12 @@
+.home-lines path {
+    stroke-width: 2px;
+    stroke: white;
+    fill: lightcyan;
+  }
+  
+  svg {
+    max-width: 350px;
+    max-height: 350px;
+    height: 350px;
+  }
+

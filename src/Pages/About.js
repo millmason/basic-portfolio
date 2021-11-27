@@ -1,16 +1,13 @@
 import React from 'react';
 
-const divStyle = {
-    color:'blue'
-};
-
 class About extends React.Component {
     
     render() {
         return (
-            <div style={divStyle}>
-                <h2>About Page</h2>
-                <p>Read all about it</p>
+            <div className="content-block">
+                <h2>About</h2>
+                <p>I make websites.</p>
+                <p>Currently, I'm really interested in shaders.</p>
             </div>
         )
     }

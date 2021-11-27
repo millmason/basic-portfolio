@@ -38,7 +38,8 @@ export const Lines = () => {
     
 
     return (
-        <svg
+        <svg 
+            className="home-lines"
             viewBox="0 20 200 200"
             version="1.1"
         >
