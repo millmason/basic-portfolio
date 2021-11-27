@@ -21,6 +21,9 @@
   left: 0;
 }
 
+.back.button {
+    margin-right: 20px;
+}
 .project-image {
   overflow: hidden;
 }
@@ -63,7 +66,7 @@
 
 .project-image {
   z-index: 10;
-  background: #cecec3;
+  background: lightcyan;
 }
 
 .project-image svg {
@@ -71,21 +74,19 @@
   height: 100%;
 }
 
-.project-image path {
-    stroke: #4e4e4e;
-    stroke-width: 1px;
-}
-
 .project {
   margin: 4px;
   position: relative;
   cursor: pointer;
+  border: 2px solid black;
+
 }
 
 .project-container {
   margin-top: 24px;
   padding-top: 10px;
-  width: calc(80vw + 34px);
+  width: 82vw;
+  max-width: 832px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -123,10 +124,6 @@
 #lines { 
   width: 220%;
   height: 220%;
-}
-
-.lines #lines path {
-  stroke: #fefefe;
 }
 
 #starmap path {
@@ -244,17 +241,18 @@
 
 .project.open .project-text-box {
   height: 58vw;
-  border-bottom: #cecec3 2px solid;
-  border-left: #cecec3 2px solid;
-  border-right: #cecec3 2px solid;
   opacity: 1;
 }
 
-.project.open:hover .project-text-box {
+/* .project.open:hover {
+    border: goldenrod 2px solid;
+} */
+
+/* .project.open:hover .project-text-box {
   border-bottom: goldenrod 2px solid;
   border-left: goldenrod 2px solid;
   border-right: goldenrod 2px solid;
-}
+} */
 
 .project.open:hover .project-image {
   background: goldenrod;
@@ -342,22 +340,22 @@
     justify-content: flex-start;
   }
 
-  .project.open .project-text-box {
-    border-bottom: #cecec3 2px solid;
-    border-top: #cecec3 2px solid;
+  /* .project.open .project-text-box {
+    border-bottom: black 2px solid;
+    border-top: black 2px solid;
   }
 
   .project.open.right .project-text-box {
-    border-left: #cecec3 2px solid;
+    border-left: black 2px solid;
     border-right: none;
   }
 
   .project.open.left .project-text-box {
-    border-right: #cecec3 2px solid;
+    border-right: black 2px solid;
     border-left: none;
-  }
+  } */
   
-  .project.open:hover .project-text-box {
+  /* .project.open:hover .project-text-box {
     border-bottom: goldenrod 2px solid;
     border-top: goldenrod 2px solid;
   }
@@ -369,7 +367,7 @@
 
   .project.open.left:hover .project-text-box {
     border-right: goldenrod 2px solid;
-  }
+  } */
 
   .project,
   .project-image,
@@ -423,6 +421,17 @@
 
 @media (min-width: 760px) {
   .project-container {
-    max-width: 720px;
+    max-width: 832px;
+    width: 82vw;
   }
+}
+
+.project {
+    fill: none;
+    stroke-width: 1px;
+    stroke: black;
+}
+
+.project.open:hover {
+    stroke: white;
 }

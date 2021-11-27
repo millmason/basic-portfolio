@@ -13,7 +13,7 @@ const Projects = () => {
     ];
     return (
         <>
-            <Link to="/" className="button">{`< home `}</Link>
+            <Link to="/" className="back button">{`< home `}</Link>
             <div className="project-container">
             { PROJECTS.map( project => {
                 return <Project

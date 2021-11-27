@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Cheese, Branch, LittleLines, StarMap, Radio } from '../../images';
+import { Lines } from '../Lines';
 
 export const Project = ({projectName, copy, codeUrl, liveUrl}) => {
 
@@ -9,7 +10,7 @@ export const Project = ({projectName, copy, codeUrl, liveUrl}) => {
         mousetrap: <Cheese />,
         starchart: <StarMap />,
         romanholiday: <Branch />,
-        lines: <LittleLines />
+        lines: <Lines strokeColor="black"/>
     }
 
     const trimmedName = projectName.replace(' ', '');

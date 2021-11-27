@@ -8,7 +8,7 @@ class Home extends React.Component {
     render() {
         return (
             <>
-                <Lines />
+                <Lines isOnHomePage={true}/>
                 <div className="title-block">
                     <div className="text-block">
                         <p>Hi, I'm Mill</p>

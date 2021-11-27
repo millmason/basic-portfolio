@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { getNextStep, getRandomWave, pathToString, updatePaths } from '../utils'
 import { useAnimationFrame } from '../hooks';
 
-export const Lines = () => {
+export const Lines = ({ isOnHomePage=false}) => {
     // this keeps track of the plotted paths for each line in the illustration.
     // the entire array should be updated every frame to be slightly different.
     const numberOfLines = 40;
@@ -39,7 +39,7 @@ export const Lines = () => {
 
     return (
         <svg 
-            className="home-lines"
+            className={`${isOnHomePage ? 'home-lines' : 'project-lines'}`}
             viewBox="0 20 200 200"
             version="1.1"
         >
@@ -47,7 +47,7 @@ export const Lines = () => {
             <desc>a bunch of lines</desc>
             {
                 wavePaths.map((wave, index) => {
-                    return <path className="line" stroke="#f2f2f2" d={pathToString(wave, index)}/>
+                    return <path className="line" d={pathToString(wave, index)}/>
                 })
             }
         </svg>
