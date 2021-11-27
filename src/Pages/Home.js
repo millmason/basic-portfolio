@@ -9,9 +9,13 @@ class Home extends React.Component {
             <div className="home-wrapper">
                 <Lines />
                 <div className="title-block">
-                    <p>Hi, I'm Mill</p>
-                    <Link to="/projects">projects</Link>
-                    <Link to="/about">about</Link>
+                    <div className="text-block">
+                        <p>Hi, I'm Mill</p>
+                    </div>
+                    <div className="button-wrapper">
+                    <Link className="button" to="/projects">projects</Link>
+                    <Link className="button" to="/about">about</Link>
+                    </div>
                 </div>
             </div>
         );

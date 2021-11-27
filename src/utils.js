@@ -55,7 +55,7 @@ const getWaveHeight = svgWidth => {
 export const getNextStep = ({ wave, targetWave, svgWidth, setTargetWave }) => {
     let waveInterval = [0, 0, 0, 0];
     let waveHeights = [0, 0];
-    let spaceBetweenLines = 6;
+    let spaceBetweenLines = 8;
   
     for (let i = 0; i < waveInterval.length; i++) {
       if (wave.waveInterval[i] > targetWave.waveInterval[i]) {

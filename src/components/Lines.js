@@ -38,7 +38,6 @@ export const Lines = () => {
     
 
     return (
-        <div className="svg-frame">
         <svg
             viewBox="0 20 200 200"
             version="1.1"
@@ -51,6 +50,5 @@ export const Lines = () => {
                 })
             }
         </svg>
-        </div>
     )
 }
