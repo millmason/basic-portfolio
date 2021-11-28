@@ -14,8 +14,27 @@ body {
   padding: 20px;
 }
 
+.link {
+  color: black;
+  text-decoration: none;
+  border-bottom: 2px solid turquoise;
+}
+
+.link:hover {
+  border-bottom: 2px solid darkturquoise;
+}
+
+.link:active {
+  border-bottom: 2px solid hotpink;
+}
+
 .content-block {
   padding: 22px;
+}
+
+.text-highlight {
+  padding: 1px;
+  background: lightcyan;
 }
 
 .title-block {
@@ -46,7 +65,7 @@ body {
   font-size: 14px;
   background: white;
   padding: 8px;
-  transition: .25s box-shadow linear;
+  /* transition: .25s box-shadow linear; */
   text-decoration: none;
   color: black;
   border: 2px solid black;
@@ -57,7 +76,7 @@ body {
 }
 
 .button:active {
-  box-shadow: 2px 2px darkturquoise;
+  box-shadow: 4px 4px hotpink;
 }
 
 .text-block {

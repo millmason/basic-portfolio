@@ -50,7 +50,7 @@
 
 .project-name {
   padding: 1px;
-  background: lightgoldenrodyellow;
+  background: mistyrose;
 }
 
 .project .project-image {
@@ -66,7 +66,7 @@
 
 .project-image {
   z-index: 10;
-  background: lightcyan;
+  background: #b3ffff;
 }
 
 .project-image svg {
@@ -218,15 +218,15 @@
 }
 
 .project.open:hover #mousetrap circle {
-  fill: gold;
+  fill: deeppink;
 }
 
 .project.open.mousetrap:hover #mousetrap circle {
-  fill: gold;
+  fill: pink;
 }
 
 .project.open.mousetrap:hover #mousetrap .rind {
-  fill: palegoldenrod;
+  fill: pink;
 }
 
 /****** "open" styles  ******/
@@ -255,7 +255,7 @@
 } */
 
 .project.open:hover .project-image {
-  background: goldenrod;
+  background: mistyrose;
 }
 
 /* handles horizontal text-opening */
@@ -268,16 +268,16 @@
 }
 
 .open:hover #speaker-large {
-  stroke: darkgoldenrod;
+  stroke: pink;
 }
 
 .open:hover #speaker-small,
 .open #Oval-6 {
-  fill: palegoldenrod;
+  fill: pink;
 }
 
 .open:hover #Rectangle-6 {
-  fill: palegoldenrod;
+  fill: pink;
 }
 
 #swan circle {
