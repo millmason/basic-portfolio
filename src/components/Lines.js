@@ -32,7 +32,6 @@ export const Lines = ({ isOnHomePage=false}) => {
             wave = nextStep;
             newPaths.push(nextStep);
         }
-        console.log("new paths: ", newPaths);
         setWavePaths(newPaths);
     }, []);
     
@@ -47,7 +46,7 @@ export const Lines = ({ isOnHomePage=false}) => {
             <desc>a bunch of lines</desc>
             {
                 wavePaths.map((wave, index) => {
-                    return <path className="line" d={pathToString(wave, index)}/>
+                    return <path key={index} className="line" d={pathToString(wave, index)}/>
                 })
             }
         </svg>

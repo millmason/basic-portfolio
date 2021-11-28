@@ -4,9 +4,9 @@ export const StarMap = () => {
     return (
 <svg id="starmap" width="100%" height="100%" viewBox="0 0 142 144" version="1.1">
     <title>Swan constellation</title>
-    <desc>Aniamted star map of Lyra, Sagitta, and Cygnus constellations</desc>
+    <desc>Animated star map of Lyra, Sagitta, and Cygnus constellations</desc>
     <defs></defs>
-    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
         <g transform="translate(-97.000000, -215.000000)">
             <g transform="translate(30.000000, 3.000000)">
                 <g id="swan" transform="translate(67.000000, 212.000000)">
@@ -47,7 +47,7 @@ export const StarMap = () => {
                 <g id="lyra" transform="translate(90.000000, 102.000000)">
                     <path stroke="#4e4e4e" d="M32.5040874 6.85830055 23.2949531 6.85830055 16.5777023 3.65422288 3.63233628 13.6807076 10.3161283 16.9150575 23.2949531 7.2846402"></path>
                     <circle fill="#FFFFFF" cx="3.14559365" cy="14" r="2.5"></circle>
-                    <circle id="Star" fill="#FFFFFF" cx="32" cy="8" r="3" stroke-width="2" stroke-dasharray="1"></circle>
+                    <circle id="Star" fill="#FFFFFF" cx="32" cy="8" r="3" strokeWidth="2" strokeDasharray="1"></circle>
                     <circle fill="#FFFFFF" cx="23.6455937" cy="6.36151869" r="1.5"></circle>
                     <circle fill="#FFFFFF" cx="16.6455937" cy="3.36151869" r="1.5"></circle>
                     <circle fill="#FFFFFF" cx="10.6455937" cy="16.3615187" r="1.5"></circle>

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Cheese, Branch, LittleLines, StarMap, Radio } from '../../images';
+import { Cheese, Branch, StarMap, Radio } from '../../images';
 import { Lines } from '../Lines';
 
 export const Project = ({projectName, copy, codeUrl, liveUrl}) => {
