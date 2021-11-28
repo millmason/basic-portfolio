@@ -1,6 +1,6 @@
 {
   "name": "2021-portfolio",
-  "homepage": "https://millsoper.github.io/2021-portfolio/",
+  "homepage": "https://www.millsoper.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -16,8 +16,8 @@
   "scripts": {
     "start": "react-scripts start",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "build": "react-scripts build",
+    "deploy": "gh-pages -d build -t true",
+    "build": "react-scripts build && touch ./build/.nojekyll",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
