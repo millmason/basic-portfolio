@@ -1,4 +1,7 @@
 /* mobile first -- this goes up to 385px screen width*/
+
+/* All of these (the containing box for each project, and
+   contained image and description) should be the same size */   
 .project,
 .project-image,
 .project-text-box {
@@ -7,6 +10,22 @@
   transition: all 200ms ease-in-out;
 }
 
+.project.project-header {
+    border: none;
+    align-items: start;
+    justify-content: end;
+    margin-right: 8px;
+    height: 120px;
+}
+
+@media (min-width: 385px) {
+    .project.project-header {
+        height: 70vw;
+        align-items: end;
+    }
+}
+
+/* Inside the description in each project box */ 
 .link-container {
     display: flex;
     flex-direction: row;
@@ -14,24 +33,12 @@
     max-width: 70%;
 }
 
-.home-button {
-  position: absolute;
-  align-self: start;
-  top: 0;
-  left: 0;
-}
-
-.back.button {
-    margin-right: 20px;
-}
 .project-image {
   overflow: hidden;
 }
 
 .project {
   overflow: hidden;
-  display: flex;
-  flex-direction: row;
 }
 
 .project-text-box {
@@ -56,12 +63,13 @@
 .project .project-image {
     position: absolute;
     left: 0;
+    bottom: 0;
 }
 
 .project .project-text-box {
     position: absolute;
-    right: 0
-    
+    right: 0;
+    top: 0; 
 }
 
 .project-image {
@@ -94,6 +102,8 @@
 
 /* svg styles + hover styles */
 
+
+/* roman holiday */
 .branch {
   position: absolute;
   height: 60%;
@@ -121,11 +131,7 @@
   transform: rotate(-12deg);
 }
 
-#lines { 
-  width: 220%;
-  height: 220%;
-}
-
+/* star map */
 #starmap path {
   stroke-dashoffset: 400px;
   stroke-dasharray: 400px;
@@ -150,6 +156,8 @@
 .medium-diamond {
   fill: white;
 }
+
+/* cheese */
 
 @keyframes sparkle {
   0% {

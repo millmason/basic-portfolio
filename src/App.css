@@ -9,9 +9,9 @@ body {
   width: 80vw;
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
   position: relative;
-  padding: 20px;
 }
 
 .link {
@@ -29,7 +29,13 @@ body {
 }
 
 .content-block {
-  padding: 22px;
+  padding: 40px;
+}
+
+.content-block.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .text-highlight {
@@ -82,4 +88,10 @@ body {
 .text-block {
   background: #fefefe;
   padding: 14px;
+}
+
+@media (min-width: 385px) {
+  .App {
+    padding: 20px;
+  }
 }

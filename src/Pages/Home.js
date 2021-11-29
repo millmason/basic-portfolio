@@ -7,7 +7,7 @@ import "./Home.css";
 class Home extends React.Component {
     render() {
         return (
-            <>
+            <div className="content-block home">
                 <Lines isOnHomePage={true}/>
                 <div className="title-block">
                     <div className="text-block">
@@ -18,7 +18,7 @@ class Home extends React.Component {
                     <Link className="button" to="/about">about</Link>
                     </div>
                 </div>
-            </>
+            </div>
         );
     }
 

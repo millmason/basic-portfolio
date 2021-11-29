@@ -12,12 +12,11 @@ const Projects = () => {
         { projectName: 'roman holiday', copy: 'find the next ancient roman holiday via a node and express app', codeUrl: 'https://glitch.com/edit/#!/roman-holiday', liveUrl: 'https://roman-holiday.glitch.me'},
     ];
     return (
-        <>
-            <div style={{ display: 'flex', flexDirection: 'column', marginRight: '20px'}}>
+        <div className="project-container">
+            <div className="project project-header" style={{ display: 'flex', flexDirection: 'column'}}>
                 <Link to="/" className="back button">{`< home `}</Link>
                 <h2>Projects</h2>
             </div>
-            <div className="project-container">
             { PROJECTS.map( project => {
                 return <Project
                             key={project.projectName}
@@ -27,8 +26,7 @@ const Projects = () => {
                             liveUrl={project.liveUrl}
                         />
             })}
-            </div>
-        </>
+        </div>
     )
 }
 
