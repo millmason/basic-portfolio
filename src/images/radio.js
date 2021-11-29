@@ -3,8 +3,8 @@ import React from 'react';
 export const Radio = () => {
     return (
     <svg viewBox="0,0,800,800" height="100%" width="100%">
-  <title>wavy</title>
-  <desc>wavy radio icon</desc>
+  <title>Wavy: Experiments with the HTML5 audio API</title>
+  <desc>An animated radio with a bouncing speaker</desc>
   <defs>
     <path d="M595.904795,381 L632,381 L632,299 L155.274094,299 L155.274094,381 L405.095205,381 C429.057487,355.747331 462.939751,340 500.5,340 C538.060249,340 571.942513,355.747331 595.904795,381 Z" id="path-1"></path>
     <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="476.725906" height="82" fill="white">

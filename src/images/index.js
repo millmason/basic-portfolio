@@ -1,6 +1,7 @@
 import { Cheese } from './cheese';
-import { Branch } from './branch';
 import { Radio } from './radio';
 import { StarMap } from './starmap';
+import { OliveBranchLeft } from './oliveBranchLeft';
+import { OliveBranchRight } from './oliveBranchRight';
 
-export { Cheese, Branch, Radio, StarMap}
+export { Cheese, OliveBranchLeft, OliveBranchRight, Radio, StarMap}

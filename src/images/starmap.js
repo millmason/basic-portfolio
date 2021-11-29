@@ -3,7 +3,7 @@ import React from 'react';
 export const StarMap = () => {
     return (
 <svg id="starmap" width="100%" height="100%" viewBox="0 0 142 144" version="1.1">
-    <title>Swan constellation</title>
+    <title>Star map: an interactive map of constellations made with React</title>
     <desc>Animated star map of Lyra, Sagitta, and Cygnus constellations</desc>
     <defs></defs>
     <g stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">

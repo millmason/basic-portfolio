@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Cheese, Branch, StarMap, Radio } from '../../images';
+import { Cheese, OliveBranchLeft, OliveBranchRight, StarMap, Radio } from '../../images';
 import { Lines } from '../Lines';
 
 export const Project = ({projectName, copy, codeUrl, liveUrl}) => {
@@ -9,7 +9,6 @@ export const Project = ({projectName, copy, codeUrl, liveUrl}) => {
         wavy: <Radio />,
         mousetrap: <Cheese />,
         starchart: <StarMap />,
-        romanholiday: <Branch />,
         lines: <Lines strokeColor="black"/>
     }
 
@@ -20,7 +19,13 @@ export const Project = ({projectName, copy, codeUrl, liveUrl}) => {
              onClick={() => { setIsOpen(!isOpen)}} 
         >
             <div className="project-image" id={trimmedName}>
-                { images[trimmedName]}
+                { trimmedName !== "romanholiday" ?
+                images[trimmedName] : 
+                (<>
+                    <OliveBranchLeft />
+                    <OliveBranchRight />
+                 </>)
+                }
             </div>
             <div className="project-text-box">
                 <p>

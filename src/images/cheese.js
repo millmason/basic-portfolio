@@ -3,7 +3,7 @@ import React from 'react';
 export const Cheese = () => {
     return (
         <svg id="sparkles" width="180px" height="180px" viewBox="0 0 196 201" version="1.1">
-            <title>cheese</title>
+            <title>Mousetrap: Cursor tracking experiments</title>
             <desc>A sparkling cheese animation</desc>
                 <g className="cheese" transform="translate(0.825736, -0.658050)" stroke="#4e4e4e" strokeWidth="1" fill="#fefefe" fillRule="evenodd">
                     <path className="rind" d="M140.53716,155.674043 C166.627074,150.53006 180.874432,142.645546 183.279234,132.0205 C183.279234,112.898607 183.279234,89.48601 183.279234,61.0543107 C172.180863,33.5734235 33.7819873,29.4485314 18.8544183,48.2757285" fillRule="nonzero"></path>

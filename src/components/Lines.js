@@ -42,8 +42,8 @@ export const Lines = ({ isOnHomePage=false}) => {
             viewBox="0 20 200 200"
             version="1.1"
         >
-            <title>a flowing water model</title>
-            <desc>a bunch of lines</desc>
+            <title>Lines:</title>
+            <desc>A flowing wave animation made by animating SVG paths without greensock</desc>
             {
                 wavePaths.map((wave, index) => {
                     return <path key={index} className="line" d={pathToString(wave, index)}/>
