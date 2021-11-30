@@ -244,11 +244,11 @@
 }
 
 .project.open.mousetrap:hover #mousetrap circle {
-  fill: pink;
+  fill: #ff8cde;
 }
 
 .project.open.mousetrap:hover #mousetrap .rind {
-  fill: pink;
+  fill:#ff8cde;
 }
 
 /****** "open" styles  ******/
@@ -277,7 +277,7 @@
 } */
 
 .project.open:hover .project-image {
-  background: mistyrose;
+  background: #ffbaeb;
 }
 
 /* handles horizontal text-opening */
@@ -290,16 +290,16 @@
 }
 
 .open:hover #speaker-large {
-  stroke: pink;
+  stroke: #ff8cde;
 }
 
 .open:hover #speaker-small,
 .open #Oval-6 {
-  fill: pink;
+  fill: #ff8cde;
 }
 
 .open:hover #Rectangle-6 {
-  fill: pink;
+  fill: #ff8cde;
 }
 
 #swan circle {
