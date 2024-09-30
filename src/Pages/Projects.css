@@ -82,10 +82,9 @@
   height: 100%;
 }
 
-.project-lines:hover {
-  stroke-width: 4px;
+#lines:hover {
+  stroke-width: 3px;
 }
-
 
 #romanholiday {
     display: flex;
