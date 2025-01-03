@@ -1,7 +1,7 @@
 /* mobile first -- this goes up to 385px screen width*/
 
 /* All of these (the containing box for each project, and
-   contained image and description) should be the same size */   
+   contained image and description) should be the same size */
 .project,
 .project-image,
 .project-text-box {
@@ -11,26 +11,26 @@
 }
 
 .project.project-header {
-    border: none;
-    align-items: start;
-    justify-content: end;
-    margin-right: 8px;
-    height: 120px;
+  border: none;
+  align-items: start;
+  justify-content: end;
+  margin-right: 8px;
+  height: 120px;
 }
 
 @media (min-width: 385px) {
-    .project.project-header {
-        height: 70vw;
-        align-items: end;
-    }
+  .project.project-header {
+    height: 70vw;
+    align-items: end;
+  }
 }
 
-/* Inside the description in each project box */ 
+/* Inside the description in each project box */
 .link-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    max-width: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  max-width: 70%;
 }
 
 .project-image {
@@ -61,15 +61,15 @@
 }
 
 .project .project-image {
-    position: absolute;
-    left: 0;
-    bottom: 0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 
 .project .project-text-box {
-    position: absolute;
-    right: 0;
-    top: 0; 
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
 .project-image {
@@ -77,23 +77,39 @@
   background: #b3ffff;
 }
 
-.project-image svg {
+.project-image .svg {
   width: 100%;
+  height: calc(100% - 40px);
+  transition: height 1s;
+}
+
+.project-image .branch-container.svg {
+  height: calc(100% - 50px);
+  transition: height 1s;
+}
+
+.open .project-image .svg {
   height: 100%;
+}
+
+.sub-title {
+  background: white;
+  padding: 8px;
 }
 
 #lines:hover {
   stroke-width: 3px;
 }
 
-#romanholiday {
-    display: flex;
-    align-items: center;
+#romanholiday.project-image svg {
+  width: 45%;
+  transition: transform 1s;
+  transition: margin-top 1s;
+  margin-top: -90px;
 }
 
-#romanholiday.project-image svg {
-    width: 45%;
-    margin-bottom: 20%;
+.project.open #romanholiday.project-image svg {
+  margin-top: -70px;
 }
 
 .project {
@@ -101,7 +117,6 @@
   position: relative;
   cursor: pointer;
   border: 2px solid black;
-
 }
 
 .project-container {
@@ -116,21 +131,19 @@
 
 /* svg styles + hover styles */
 
-
 /* roman holiday */
 .branch {
-  position: absolute;
   width: 45%;
   top: 4%;
   transition: transform 1.2s;
-  stroke-width: .5;
+  stroke-width: 0.5;
   stroke: #333;
 }
 
 .branch .leaf {
   fill: #fefefe;
   stroke: #333;
-  stroke-width: .5;
+  stroke-width: 0.5;
 }
 
 .branch-right {
@@ -194,7 +207,8 @@
 }
 
 #mousetrap {
-  cursor: url(https://cdn.glitch.com/fbfbe80c-5dab-43e8-81ab-0a353618a87d%2Fmouse.png?v=1574279541232), pointer;
+  cursor: url(https://cdn.glitch.com/fbfbe80c-5dab-43e8-81ab-0a353618a87d%2Fmouse.png?v=1574279541232),
+    pointer;
 }
 
 .mousetrap:hover #sparkles .tiny-diamond.one {
@@ -252,7 +266,7 @@
 }
 
 .project.open.mousetrap:hover #mousetrap .rind {
-  fill:#ff8cde;
+  fill: #ff8cde;
 }
 
 /****** "open" styles  ******/
@@ -380,7 +394,7 @@
     border-right: black 2px solid;
     border-left: none;
   } */
-  
+
   /* .project.open:hover .project-text-box {
     border-bottom: goldenrod 2px solid;
     border-top: goldenrod 2px solid;
@@ -453,11 +467,11 @@
 }
 
 .project {
-    fill: none;
-    stroke-width: 1px;
-    stroke: black;
+  fill: none;
+  stroke-width: 1px;
+  stroke: black;
 }
 
 .project.open:hover {
-    stroke: white;
+  stroke: white;
 }
