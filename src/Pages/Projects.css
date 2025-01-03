@@ -76,19 +76,22 @@
   z-index: 10;
   background: #b3ffff;
 }
-
+/* This height offset lets you see the "sub-text" for each project while it's closed. */
 .project-image .svg {
   width: 100%;
   height: calc(100% - 40px);
   transition: height 1s;
 }
-
-.project-image .branch-container.svg {
-  height: calc(100% - 50px);
+/* These are exceptions that need a bit more space for their text.*/
+.project-image .branch-container.svg,
+.project-image #starmap {
+  height: calc(100% - 55px);
   transition: height 1s;
 }
 
-.open .project-image .svg {
+/* This covers the "sub-text" for each project when the project is "opened" */
+.open .project-image .svg,
+.open .project-image #starmap {
   height: 100%;
 }
 

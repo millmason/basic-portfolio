@@ -28,14 +28,14 @@ const Projects = () => {
     },
     {
       projectName: "star chart",
-      shortCopy: "it's a chart!",
+      shortCopy: "interactive constellation map",
       copy: "an interactive star chart built with styled components and react hooks",
       codeUrl: "https://glitch.com/edit/#!/star-chart",
       liveUrl: "https://star-chart.glitch.me",
     },
     {
       projectName: "roman holiday",
-      shortCopy: "daily roman holidays",
+      shortCopy: " calendar of ancient holidays",
       copy: "find the next ancient roman holiday via a node and express app",
       codeUrl: "https://glitch.com/edit/#!/roman-holiday",
       liveUrl: "https://roman-holiday.glitch.me",
