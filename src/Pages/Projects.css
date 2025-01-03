@@ -312,7 +312,7 @@
 }
 
 .open:hover #speaker-small,
-.open #Oval-6 {
+.open:hover #Oval-6 {
   fill: #ff8cde;
 }
 
