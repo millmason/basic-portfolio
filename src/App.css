@@ -29,7 +29,7 @@ body {
 }
 
 .link:active {
-  border-bottom: 2px solid hotpink;
+  border-bottom: 2px solid #e74c3c;
 }
 
 .content-block {
@@ -86,7 +86,7 @@ body {
 }
 
 .button:active {
-  box-shadow: 4px 4px hotpink;
+  box-shadow: 4px 4px #e74c3c;
 }
 
 .text-block {
