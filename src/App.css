@@ -2,11 +2,15 @@ body {
   background: ivory;
 }
 
+.background {
+  height: 100%;
+  width: 100%;
+}
+
 .App {
   min-width: 320px;
   min-height: 100vh;
   margin: 0 auto;
-  width: 80vw;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -39,8 +43,8 @@ body {
 }
 
 .text-highlight {
-  padding: 1px;
-  background: lightcyan;
+  padding: 4px;
+  background: #b3ffff;
 }
 
 .title-block {
@@ -48,7 +52,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  position:absolute;
+  position: absolute;
   height: 106px;
 }
 
@@ -87,7 +91,7 @@ body {
 
 .text-block {
   background: #fefefe;
-  padding: 14px;
+  padding: 10px;
 }
 
 @media (min-width: 385px) {

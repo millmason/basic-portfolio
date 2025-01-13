@@ -1,3 +1,8 @@
+:root {
+  --lighterProjectColor: #f5b7b1;
+  --darkerProjectColor: #f1948a;
+}
+
 /* mobile first -- this goes up to 385px screen width*/
 
 /* All of these (the containing box for each project, and
@@ -138,7 +143,7 @@
 .branch {
   width: 45%;
   top: 4%;
-  transition: transform 1.2s;
+  transition: all 1.2s;
   stroke-width: 0.5;
   stroke: #333;
 }
@@ -158,10 +163,12 @@
 }
 
 #romanholiday:hover .branch-right {
+  transition: all 1s;
   transform: rotate(12deg);
 }
 
 #romanholiday:hover .branch-left {
+  transition: all 1s;
   transform: rotate(-12deg);
 }
 
@@ -261,15 +268,15 @@
 }
 
 .project.open:hover #mousetrap circle {
-  fill: deeppink;
+  fill: var(--darkerProjectColor);
 }
 
 .project.open.mousetrap:hover #mousetrap circle {
-  fill: #ff8cde;
+  fill: var(--lighterProjectColor);
 }
 
 .project.open.mousetrap:hover #mousetrap .rind {
-  fill: #ff8cde;
+  fill: var(--lighterProjectColor);
 }
 
 /****** "open" styles  ******/
@@ -298,7 +305,7 @@
 } */
 
 .project.open:hover .project-image {
-  background: #ffbaeb;
+  background: var(--lighterProjectColor);
 }
 
 /* handles horizontal text-opening */
@@ -311,16 +318,16 @@
 }
 
 .open:hover #speaker-large {
-  stroke: #ff8cde;
+  stroke: var(--lighterProjectColor);
 }
 
 .open:hover #speaker-small,
 .open:hover #Oval-6 {
-  fill: #ff8cde;
+  fill: var(--lighterProjectColor);
 }
 
 .open:hover #Rectangle-6 {
-  fill: #ff8cde;
+  fill: var(--lighterProjectColor);
 }
 
 #swan circle {

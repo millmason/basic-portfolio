@@ -1,12 +1,17 @@
 .home-lines path {
-    stroke-width: 2px;
-    stroke: white;
-    fill: #b3ffff;
-  }
-  
-  svg {
-    max-width: 80vw;
-    max-height: 80vw;
-    height: 350px;
-  }
+  stroke-width: 2px;
+  stroke: ivory;
+  fill: tomato;
+}
 
+.highlight {
+  background: #d1f2eb;
+  padding: 4px;
+}
+
+svg {
+  max-width: 80vw;
+  max-height: 80vw;
+  height: 350px;
+  opacity: 75%;
+}
