@@ -23,6 +23,10 @@
   height: 120px;
 }
 
+.project h2 {
+  margin-right: 2px;
+}
+
 .project .button {
   background: mistyrose;
 }
