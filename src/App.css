@@ -93,10 +93,6 @@ body {
   box-shadow: 4px 4px #e74c3c;
 }
 
-.button:focus {
-  border: 2px solid blue;
-}
-
 .text-block {
   background: #fefefe;
   padding: 10px;

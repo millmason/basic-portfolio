@@ -15,16 +15,16 @@
   transition: all 200ms ease-in-out;
 }
 
-.project:focus {
-  border: 2px solid blue;
-}
-
 .project.project-header {
   border: none;
   align-items: start;
   justify-content: end;
   margin-right: 8px;
   height: 120px;
+}
+
+.project .button {
+  background: mistyrose;
 }
 
 @media (min-width: 385px) {
