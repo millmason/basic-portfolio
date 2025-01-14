@@ -21,7 +21,15 @@ export const Project = ({ projectName, shortCopy, copy, codeUrl, liveUrl }) => {
 
   return (
     <div
+      aria-expanded={isOpen}
       className={`project ${trimmedName} ${isOpen ? "open" : ""}`}
+      tabIndex={0}
+      onKeyDown={(event) => {
+        console.log("EVENT: ", event.key);
+        if (event.key === "Enter") {
+          setIsOpen(!isOpen);
+        }
+      }}
       onClick={() => {
         setIsOpen(!isOpen);
       }}

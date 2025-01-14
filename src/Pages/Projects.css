@@ -15,6 +15,10 @@
   transition: all 200ms ease-in-out;
 }
 
+.project:focus {
+  border: 2px solid blue;
+}
+
 .project.project-header {
   border: none;
   align-items: start;
@@ -124,7 +128,7 @@
   margin: 4px;
   position: relative;
   cursor: pointer;
-  border: 2px solid black;
+  border: 2px solid mistyrose;
 }
 
 .project-container {

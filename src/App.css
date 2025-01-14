@@ -78,7 +78,10 @@ body {
   /* transition: .25s box-shadow linear; */
   text-decoration: none;
   color: black;
-  border: 2px solid black;
+}
+
+.button.back {
+  margin-right: 2px;
 }
 
 .button:hover {
@@ -87,6 +90,10 @@ body {
 
 .button:active {
   box-shadow: 4px 4px #e74c3c;
+}
+
+.button:focus {
+  border: 2px solid blue;
 }
 
 .text-block {
